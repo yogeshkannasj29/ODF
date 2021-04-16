@@ -44,7 +44,7 @@
 					<TD style="HEIGHT: 335px" vAlign="top"></TD>
 				</TR>
 				<TR>
-					<TD>&nbsp;&nbsp;
+					<TD>&nbsp;
 						<uc1:Header id="Header2" runat="server"></uc1:Header></TD>
 				</TR>
 			</TABLE>
