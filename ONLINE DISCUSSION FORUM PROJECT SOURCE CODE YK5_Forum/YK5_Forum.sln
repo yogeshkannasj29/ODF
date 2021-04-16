@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "YK5_Forum", "http://localhost/ODF_Old_17.08.07/YK5_Forum.csproj", "{193ECA40-2A7F-4BD9-9817-55E9351BEB4E}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{193ECA40-2A7F-4BD9-9817-55E9351BEB4E}.Debug|Default.ActiveCfg = Debug|.NET
+		{193ECA40-2A7F-4BD9-9817-55E9351BEB4E}.Debug|Default.Build.0 = Debug|.NET
+		{193ECA40-2A7F-4BD9-9817-55E9351BEB4E}.Release|Default.ActiveCfg = Release|.NET
+		{193ECA40-2A7F-4BD9-9817-55E9351BEB4E}.Release|Default.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

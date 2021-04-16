@@ -1,0 +1,134 @@
+﻿This report shows the steps taken to convert your Web application from ASP.NET 1.1 to ASP.NET 2.0. 
+There may be some unresolved conversion issues you will need to manually fix. 
+For more information, please refer to http://go.microsoft.com/fwlink/?LinkId=46995 or search for the help topic "Converting from Visual Studio .NET 2002 or 2003".
+Conversion Started on project file YK5_Forum.csproj at March 04 2010, 16:07:08.
+
+=========================ERRORS===================
+
+=========================WARNINGS=================
+Warning: An extra class 'WebUserControl3' has been found in code-behind file 'usercontrols\ctrlQuestion.ascx.cs'. New file 'usercontrols\ctrlQuestion_ascx_cs_WebUserControl3.cs' has been created for this class and moved to the 'App_Code\Migrated' folder.    usercontrols\ctrlQuestion.ascx.cs (Line 13)
+Warning: An extra class 'Header' has been found in code-behind file 'usercontrols\Header.ascx.cs'. New file 'usercontrols\Header_ascx_cs_Header.cs' has been created for this class and moved to the 'App_Code\Migrated' folder.    usercontrols\Header.ascx.cs (Line 13)
+Warning: An extra class 'WebUserControl1' has been found in code-behind file 'usercontrols\UploadArticle.ascx.cs'. New file 'usercontrols\UploadArticle_ascx_cs_WebUserControl1.cs' has been created for this class and moved to the 'App_Code\Migrated' folder.    usercontrols\UploadArticle.ascx.cs (Line 13)
+Warning: This web project was converted as a file-based web application. If your site contained any IIS meta-information, e.g. sub-folders marked as virtual directories, it is recommended that you close this web site and re-open it using the Open Web Site command and selecting the Local IIS tab.
+
+=========================COMMENTS=================
+Web.Config: Added 'xhtmlConformance' attribute.
+Removed attribute Codebehind from file Global.asax.
+Removed attribute AutoEventWireup from file articles\downloadarticle.aspx.
+Removed attribute Codebehind from file articles\downloadarticle.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file articles\DownLoadArticle.aspx.cs (Line 19).
+Removed attribute AutoEventWireup from file articles\uploadarticle.aspx.
+Removed attribute Codebehind from file articles\uploadarticle.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file articles\UploadArticle.aspx.cs (Line 22).
+Warning: Unable to convert event handler btnUploadTheFile_ServerClick in file articles\uploadarticle.aspx.
+Warning: Access level of 'btnUploadTheFile_ServerClick' changed to 'protected' in file articles\UploadArticle.aspx.cs (Line 59).
+Warning: Access level of 'RadioButton1_CheckedChanged' changed to 'protected' in file articles\UploadArticle.aspx.cs (Line 88).
+Warning: Access level of 'RadioButton2_CheckedChanged' changed to 'protected' in file articles\UploadArticle.aspx.cs (Line 103).
+Warning: Access level of 'hh_ServerClick' changed to 'protected' in file articles\UploadArticle.aspx.cs (Line 117).
+Removed attribute AutoEventWireup from file home\home.aspx.
+Removed attribute Codebehind from file home\home.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file home\Home.aspx.cs (Line 20).
+Warning: Access level of 'lnkDownload_Click' changed to 'protected' in file home\Home.aspx.cs (Line 48).
+Warning: Access level of 'LinkButton1_Click' changed to 'protected' in file home\Home.aspx.cs (Line 54).
+Removed attribute AutoEventWireup from file newuser\changepassword.aspx.
+Removed attribute Codebehind from file newuser\changepassword.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file newuser\ChangePassword.aspx.cs (Line 22).
+Warning: Access level of 'Button1_Click' changed to 'protected' in file newuser\ChangePassword.aspx.cs (Line 48).
+Removed attribute AutoEventWireup from file newuser\editprofile.aspx.
+Removed attribute Codebehind from file newuser\editprofile.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file newuser\EditProfile.aspx.cs (Line 24).
+Warning: Access level of 'Button2_Click' changed to 'protected' in file newuser\EditProfile.aspx.cs (Line 74).
+Warning: Access level of 'Button3_Click' changed to 'protected' in file newuser\EditProfile.aspx.cs (Line 92).
+Removed attribute AutoEventWireup from file newuser\frmforgotpwd.aspx.
+Removed attribute Codebehind from file newuser\frmforgotpwd.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file newuser\frmForgotPwd.aspx.cs (Line 23).
+Warning: Access level of 'btnSubmit_Click' changed to 'protected' in file newuser\frmForgotPwd.aspx.cs (Line 59).
+Removed attribute AutoEventWireup from file newuser\imageupload.aspx.
+Removed attribute Codebehind from file newuser\imageupload.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file newuser\ImageUpload.aspx.cs (Line 21).
+Warning: Unable to convert event handler btnUploadTheFile_ServerClick in file newuser\imageupload.aspx.
+Warning: Access level of 'btnUploadTheFile_ServerClick' changed to 'protected' in file newuser\ImageUpload.aspx.cs (Line 45).
+Removed attribute AutoEventWireup from file newuser\myaccount.aspx.
+Removed attribute Codebehind from file newuser\myaccount.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file newuser\MyAccount.aspx.cs (Line 22).
+Removed attribute AutoEventWireup from file newuser\newuserreg.aspx.
+Removed attribute Codebehind from file newuser\newuserreg.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file newuser\NewUserReg.aspx.cs (Line 22).
+Warning: Access level of 'Button2_Click' changed to 'protected' in file newuser\NewUserReg.aspx.cs (Line 59).
+Removed attribute AutoEventWireup from file newuser\userlogin.aspx.
+Removed attribute Codebehind from file newuser\userlogin.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file newuser\UserLogin.aspx.cs (Line 22).
+Warning: Access level of 'Button1_Click' changed to 'protected' in file newuser\UserLogin.aspx.cs (Line 47).
+Removed attribute AutoEventWireup from file newuser\viewprofile.aspx.
+Removed attribute Codebehind from file newuser\viewprofile.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file newuser\ViewProfile.aspx.cs (Line 22).
+Removed attribute AutoEventWireup from file postquestions\askquestions.aspx.
+Removed attribute Codebehind from file postquestions\askquestions.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file postquestions\AskQuestions.aspx.cs (Line 20).
+Warning: Access level of 'btnSubmit_Click' changed to 'protected' in file postquestions\AskQuestions.aspx.cs (Line 67).
+Removed attribute AutoEventWireup from file postquestions\postedquestions.aspx.
+Removed attribute Codebehind from file postquestions\postedquestions.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file postquestions\PostedQuestions.aspx.cs (Line 21).
+Warning: Access level of 'DataList1_SelectedIndexChanged' changed to 'protected' in file postquestions\PostedQuestions.aspx.cs (Line 51).
+Removed attribute AutoEventWireup from file postquestions\userview.aspx.
+Removed attribute Codebehind from file postquestions\userview.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file postquestions\UserView.aspx.cs (Line 21).
+Warning: Access level of 'Button1_Click' changed to 'protected' in file postquestions\UserView.aspx.cs (Line 51).
+Warning: Access level of 'Button2_Click' changed to 'protected' in file postquestions\UserView.aspx.cs (Line 59).
+Warning: Access level of 'Button3_Click' changed to 'protected' in file postquestions\UserView.aspx.cs (Line 65).
+Removed attribute AutoEventWireup from file search\searchengine.aspx.
+Removed attribute Codebehind from file search\searchengine.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file search\SearchEngine.aspx.cs (Line 23).
+Warning: Access level of 'LinkButton1_Click' changed to 'protected' in file search\SearchEngine.aspx.cs (Line 47).
+Warning: Access level of 'LinkButton2_Click' changed to 'protected' in file search\SearchEngine.aspx.cs (Line 55).
+Warning: Access level of 'btarticle_Click' changed to 'protected' in file search\SearchEngine.aspx.cs (Line 63).
+Warning: Access level of 'btqa_Click' changed to 'protected' in file search\SearchEngine.aspx.cs (Line 75).
+Warning: Access level of 'Datalist2_SelectedIndexChanged' changed to 'protected' in file search\SearchEngine.aspx.cs (Line 99).
+Removed attribute Codebehind from file usercontrols\askquestions.ascx.
+Removed attribute AutoEventWireup from file usercontrols\askquestions.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file usercontrols\AskQuestions.ascx.cs (Line 17).
+Removed attribute Codebehind from file usercontrols\ctrlpostanswers.ascx.
+Removed attribute AutoEventWireup from file usercontrols\ctrlpostanswers.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file usercontrols\ctrlPostAnswers.ascx.cs (Line 18).
+Removed attribute Codebehind from file usercontrols\ctrlquestion.ascx.
+Removed attribute AutoEventWireup from file usercontrols\ctrlquestion.ascx.
+Removed attribute TargetSchema from file usercontrols\ctrlviewanswers.ascx.
+Removed attribute Codebehind from file usercontrols\ctrlviewanswers.ascx.
+Removed attribute AutoEventWireup from file usercontrols\ctrlviewanswers.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file usercontrols\ctrlViewAnswers.ascx.cs (Line 16).
+Removed attribute TargetSchema from file usercontrols\footer.ascx.
+Removed attribute Codebehind from file usercontrols\footer.ascx.
+Removed attribute AutoEventWireup from file usercontrols\footer.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file usercontrols\Footer.ascx.cs (Line 16).
+Removed attribute Codebehind from file usercontrols\header.ascx.
+Removed attribute AutoEventWireup from file usercontrols\header.ascx.
+Removed attribute Codebehind from file usercontrols\search.ascx.
+Removed attribute AutoEventWireup from file usercontrols\search.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file usercontrols\Search.ascx.cs (Line 19).
+Warning: Access level of 'LinkButton1_Click' changed to 'protected' in file usercontrols\Search.ascx.cs (Line 47).
+Warning: Access level of 'LinkButton2_Click' changed to 'protected' in file usercontrols\Search.ascx.cs (Line 56).
+Warning: Access level of 'btarticle_Click' changed to 'protected' in file usercontrols\Search.ascx.cs (Line 64).
+Warning: Access level of 'btqa_Click' changed to 'protected' in file usercontrols\Search.ascx.cs (Line 74).
+Removed attribute Codebehind from file usercontrols\uploadarticle.ascx.
+Removed attribute AutoEventWireup from file usercontrols\uploadarticle.ascx.
+Removed attribute AutoEventWireup from file viewqa\frmquestion.aspx.
+Removed attribute Codebehind from file viewqa\frmquestion.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file viewqa\frmQuestion.aspx.cs (Line 20).
+Removed attribute AutoEventWireup from file viewqa\postanswers.aspx.
+Removed attribute Codebehind from file viewqa\postanswers.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file viewqa\PostAnswers.aspx.cs (Line 25).
+Warning: Unable to convert event handler btnUploadTheFile_ServerClick in file viewqa\postanswers.aspx.
+Warning: Access level of 'btnUploadTheFile_ServerClick' changed to 'protected' in file viewqa\PostAnswers.aspx.cs (Line 64).
+Removed attribute AutoEventWireup from file viewqa\viewanswer.aspx.
+Removed attribute Codebehind from file viewqa\viewanswer.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file viewqa\ViewAnswer.aspx.cs (Line 21).
+Added folder App_Code\Migrated\usercontrols.
+Moved file Global.asax.cs to the App_Code\ directory.
+Moved file Class1.cs to the App_Code\ directory.
+Moved file AssemblyInfo.cs to the App_Code\ directory.
+Changed HTML validation schema for all projects to 'Internet Explorer 6.0'.
+Removed file Bin\YK5_Forum.dll.
+Removed file Bin\YK5_Forum.pdb.
+Removed file YK5_Forum.csproj.
+Removed file YK5_Forum.csproj.webinfo.
+Project YK5_Forum.csproj has been converted successfully at March 04 2010, 16:07:16.
